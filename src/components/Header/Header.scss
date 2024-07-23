@@ -1,0 +1,51 @@
+@import "../../App.scss";
+
+.header{
+    background: rgb(249,78,48);
+    background: linear-gradient(180deg, rgba(249,78,48,1) 0%, rgba(255,100,51,1) 100%);
+
+    .header-cnt-top{
+        border-bottom: 1px solid lighten($clr-orange, 10%);
+    }
+
+    @media screen and (max-width: 992px){
+        .header-cnt-top{
+            flex-direction: column;
+            .header-cnt-top-l{
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    .header-cnt-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .header-cnt-top-l,
+      .header-cnt-top-r {
+        display: flex;
+        align-items: center;
+      }
+      
+      .header-cnt-top .top-links {
+        display: flex;
+        align-items: center;
+      }
+      
+      .header-cnt-top .top-links li {
+        margin-right: 15px;
+      }
+      
+      .header-cnt-top .vert-line {
+        border-left: 1px solid #fff;
+        height: 20px;
+        margin: 0 10px;
+      }
+      
+      .header-cnt-top .social-links li {
+        margin-right: 10px;
+      }
+    
+}
